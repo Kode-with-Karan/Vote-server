@@ -1,0 +1,23 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.packages
+.pub-cache/
+.pub/
+build/
+
+node_modules/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+
+# Android
+android/.gradle
+
+# iOS
+ios/Flutter/Flutter.framework
+
+# Generated
+.flutter-plugins-dependencies
