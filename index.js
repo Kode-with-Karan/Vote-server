@@ -14,7 +14,9 @@ const PORT = process.env.PORT || 8080;
 let col;
 
 async function start() {
-  const client = new MongoClient(MONGO_URI, { useUnifiedTopology: true });
+  // The modern MongoDB Node driver no longer supports `useUnifiedTopology` option.
+  // Create client with default options.
+  const client = new MongoClient(MONGO_URI);
   await client.connect();
   const db = client.db(DB);
   col = db.collection(COLLECTION);
